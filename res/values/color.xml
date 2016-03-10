@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="text_gray">#969696</color>
+    <color name="white">#ffffff</color>
+    <color name="list_color">#ebebeb</color>
+    <color name="cela_color">#11000000</color>
+    <color name="touming">#00000000 </color>
+
+</resources>

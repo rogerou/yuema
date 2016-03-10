@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebeced"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00c8c7" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发布约会"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#f6f6f6"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffbb6b" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="约会描述"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="约会内容："
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:hint="跑步，泡图书馆，看电影等等..."
+                android:imeOptions="actionNext"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时 间："
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_month"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="10dp"
+                android:hint="月"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:hint="日"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_hour"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:hint="时"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_minute"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:hint="分"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="时"
+                android:text="地 点："
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_where"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:hint="内环，图书馆等等...."
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人 数："
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_people"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:hint="1，2，3..."
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="信 物："
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_trust"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:hint="(用于身份确认)"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="要求说明："
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_request"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:lines="3"
+                android:textColor="#ff444444"
+                android:textColorHint="#ffcccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fabu" />
+
+</LinearLayout>

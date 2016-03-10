@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangdeduiwu.Yuema"
+    android:versionCode="4"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="cn.bmob.permission.push" /> <!-- 添加自定义的权限 -->
+    <meta-data
+        android:name="BMOB_CHANNEL"
+        android:value="7" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="cn.bmob.push.lib.service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:permission="cn.bmob.permission.push"
+            android:process="cn.bmob.push" >
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService" />
+            </intent-filter>
+        </service>
+        <!-- IM聊天所需的Push start -->
+        <receiver android:name="cn.bmob.push.PushReceiver" >
+            <intent-filter android:priority="2147483647" > <!-- 优先级加最高 -->
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听网络连通性 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.wangdeduiwu.Yuema.config.MyPushMessageReceiver" >
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- IM聊天所需的Push end -->
+
+        <activity
+            android:name="com.wangdeduiwu.Yuema.ui.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wangdeduiwu.Yuema.ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- qq回调需要注册该activity -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- qq授权需要注册该activity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100442925" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.RegisterActivity" >
+        </activity>
+        <activity android:name="MyDate" >
+        </activity>
+        <activity android:name="CreateDateActivity" >
+        </activity>
+        <activity android:name=".ui.InfoView" >
+        </activity>
+        <activity android:name=".ui.BaseActivity" >
+        </activity>
+        <activity android:name=".ui.DateDetailActivity" >
+        </activity>
+        <activity android:name=".ui.MyDateActivity" >
+        </activity>
+        <activity android:name="com.exam.date.MyMainActivity" >
+        </activity>
+        <activity android:name="com.exam.date.DetailActivity" >
+        </activity>
+        <activity android:name=".ui.OtherInfo" >
+        </activity>
+        <activity android:name=".ui.CreateDateActivity" >
+        </activity>
+        <activity android:name=".ui.MyInfoView" >
+        </activity>
+        <activity android:name=".ui.EditUserInfoActivity" >
+        </activity>
+        <activity android:name=".ui.PushActivity" >
+        </activity>
+        <activity android:name=".ui.LoginActivity" >
+        </activity>
+        <activity android:name=".ui.ReturnPasswordActivty"></activity>
+        <activity android:name=".ui.UserFeedBackActivity"></activity>
+    </application>
+
+</manifest>

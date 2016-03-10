@@ -1,0 +1,32 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+<style name="Animations" />
+   <style name="Animations.GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="vpiIconPageIndicatorStyle">@style/MyWidget.IconPageIndicator</item>
+    </style>
+<style name="MyWidget.IconPageIndicator" parent="Widget">
+    <item name="android:gravity">center</item>
+    <item name="android:paddingLeft">25dp</item> 
+    <item name="android:paddingRight">25dp</item> 
+    <item name="android:paddingTop">25dp</item> 
+    <item name="android:paddingBottom">25dp</item> 
+</style>
+</resources>

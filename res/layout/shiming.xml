@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ebeced"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00c8c7">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+           android:gravity="center"
+            android:text="实名认证"
+            android:textColor="#ffffff"
+            android:textSize="25dp"/>
+        </RelativeLayout>
+        
+    <ImageButton
+        android:background="@drawable/paizhao"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+    
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="点击上传学生证或校园卡（带清晰照片）"
+       android:layout_marginTop="20dp"
+       android:layout_gravity="center_horizontal"
+       android:textColor="#808080"/>
+    
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="OR"
+       android:layout_gravity="center_horizontal"
+       android:textColor="#808080"/>
+    
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="无照片的学生证或校园卡需手持"
+       android:layout_gravity="center_horizontal"
+       android:textColor="#808080"/>
+    
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="与本人合照并保持信息清晰"
+       android:layout_gravity="center_horizontal"
+       android:textColor="#808080"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">"
+         
+      <Button 
+          android:background="@drawable/nextselector"
+          android:layout_width="95dp"
+          android:layout_height="35dp" />  
+          <Button 
+          android:background="@drawable/tijiaoselector"
+          android:layout_width="95dp"
+          android:layout_height="35dp"
+           android:layout_marginLeft="60dp" />
+          </LinearLayout>
+          
+        </LinearLayout>
+        

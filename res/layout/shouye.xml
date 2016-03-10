@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebeced"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00c8c7" >
+
+        <ImageView
+            android:id="@+id/iv_touxiang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_find_date"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/findselector" />
+
+            <Button
+                android:id="@+id/btn_mydate"
+                android:layout_width="60dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+	
+
+</LinearLayout>

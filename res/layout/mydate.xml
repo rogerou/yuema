@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ebeced"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00c8c7">
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/touxiang" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_finddate"
+              android:layout_width="60dp"
+              android:layout_height="30dp" 
+              android:background="@drawable/findselector" />
+            <Button
+              android:id="@+id/btn_mydate"
+              android:layout_width="60dp"
+              android:layout_height="30dp"  />
+            
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/searchdate"
+            android:background="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tw1"
+        android:layout_below="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的昵称"
+        android:textSize="20dp"
+        android:textColor="#505050"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    
+   <TableLayout
+        android:layout_below="@+id/tw1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" > 
+        
+       <TableRow
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" >
+
+         <TextView 
+        android:text="约会信息"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_weight="2.5"
+        android:height="40dp"/>
+         <TextView 
+        android:text="状态"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"/> "
+       </TableRow>
+       
+       <View 
+           android:layout_width="fill_parent"  
+           android:layout_height="1px" 
+           android:background="#c0c0c0"  />
+       
+       <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+         <TextView 
+        android:layout_marginLeft="10dp"
+        android:text="[我们一起去琶洲看画展吧]"
+         android:textColor="#38a9a8"
+        android:layout_weight="2.5"
+        android:height="30dp"
+        android:gravity="center_vertical"/>"
+         <TextView 
+        android:text="待评价"
+        android:textColor="#505050"
+        android:gravity="center_horizontal"
+       
+        android:layout_weight="1"/> 
+       </TableRow>
+       
+      <View 
+           android:layout_width="fill_parent"  
+           android:layout_height="1px" 
+           android:background="#c0c0c0"  />
+       
+      <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">"
+         <TextView 
+        android:layout_marginLeft="10dp"
+        android:text="[想去看“少年派”]"
+        android:textColor="#38a9a8"
+        android:layout_weight="2.5"
+        android:height="30dp"
+        android:gravity="center_vertical"/>
+         <TextView 
+        android:text="已评价"
+        android:textColor="#505050"
+        android:gravity="center_horizontal"
+        
+        android:layout_weight="1"/> 
+       </TableRow>
+       
+      <View 
+           android:layout_width="fill_parent"  
+           android:layout_height="1px" 
+           android:background="#c0c0c0"  />
+      
+     <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+         <TextView 
+        android:layout_marginLeft="10dp"
+        android:text="[西藏骑车行]"
+       android:textColor="#38a9a8"
+        android:layout_weight="2.5"
+        android:height="30dp"
+        android:gravity="center_vertical"/>
+         <TextView 
+        android:text="已发布"
+         android:textColor="#505050"
+        android:gravity="center_horizontal"
+        
+        android:layout_weight="1"/> 
+       </TableRow> 
+       
+     <View 
+           android:layout_width="fill_parent"  
+           android:layout_height="1px" 
+           android:background="#c0c0c0"  />
+      
+     <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+         <TextView 
+        android:layout_marginLeft="10dp"
+        android:text="[我们一起去郊游吧]"
+        android:textColor="#38a9a8"
+        android:layout_weight="2.5"
+        android:height="30dp"
+        android:gravity="center_vertical"/>
+         <TextView 
+        android:text="已应约"
+        android:textColor="#505050"
+        android:gravity="center_horizontal"
+        
+        android:layout_weight="1"/> 
+       </TableRow> 
+       
+     <View 
+           android:layout_width="fill_parent"  
+           android:layout_height="1px" 
+           android:background="#c0c0c0"  />
+      
+     <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+         <TextView 
+        android:layout_marginLeft="10dp"
+        android:text="[我们一起去琶洲看画展吧]"
+        android:textColor="#38a9a8"
+        android:layout_weight="2.5"
+        android:height="30dp"
+        android:gravity="center_vertical"/>
+         <TextView 
+        android:text="已评价"
+        android:textColor="#505050"
+        android:gravity="center_horizontal"
+        
+        android:layout_weight="1"/> 
+       </TableRow> 
+       
+     <View 
+           android:layout_width="fill_parent"  
+           android:layout_height="1px" 
+           android:background="#c0c0c0"  />
+      
+     <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+         <TextView 
+        android:layout_marginLeft="10dp"
+        android:text="[我们一起去琶洲看画展吧]"
+       android:textColor="#38a9a8"
+        android:layout_weight="2.5"
+        android:height="30dp"
+        android:gravity="center_vertical"/>
+         <TextView 
+        android:text="已评价"
+         android:textColor="#505050"
+        android:gravity="center_horizontal"
+        
+        android:layout_weight="1"/> 
+       </TableRow> 
+       
+     <View 
+           android:layout_width="fill_parent"  
+           android:layout_height="1px" 
+           android:background="#c0c0c0"  />
+      
+     <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+         <TextView 
+        android:layout_marginLeft="10dp"
+        android:text="[我们一起去琶洲看画展吧]"
+        android:textColor="#38a9a8"
+        android:layout_weight="2.5"
+        android:height="30dp"
+        android:gravity="center_vertical"/>
+         <TextView 
+        android:text="已评价"
+        android:textColor="#505050"
+        android:gravity="center_horizontal"
+        
+        android:layout_weight="1"/> 
+       </TableRow> 
+       
+        </TableLayout>
+    
+   <RelativeLayout
+         android:id="@+id/li1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">"
+
+        <ImageButton
+            android:id="@+id/wait_jude"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/daipingjia"
+            android:onClick="onClick" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">"
+          
+          <ImageButton 
+            android:onClick="onClick"
+            android:id="@+id/answer"
+           android:layout_toRightOf="@+id/wait_jude"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/yiyingyue" />
+
+
+        <ImageButton
+            android:onClick="onClick"
+            android:layout_toRightOf="@+id/answer"
+             android:layout_marginLeft="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/yifabu" />  
+        </LinearLayout>
+
+        
+        
+        <ImageButton
+            android:onClick="onClick"
+            android:layout_marginRight="20dp"
+             android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/yipingjia" />
+    </RelativeLayout>
+    </RelativeLayout>

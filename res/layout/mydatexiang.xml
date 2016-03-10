@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ebeced"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/relative0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00c8c7">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/touxiang" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <Button
+              android:layout_width="60dp"
+              android:layout_height="30dp" 
+              android:background="@drawable/findselector" />
+            <Button
+              android:layout_width="60dp"
+              android:layout_height="30dp"  />"
+            
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/bt1"
+            android:background="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_above="@+id/relative1"
+        android:layout_below="@+id/relative0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">"
+
+    <LinearLayout 
+        android:id="@+id/lin1"
+        android:layout_below="@+id/relative1"
+       android:background="@drawable/whitebgbig"
+       android:layout_width="fill_parent"
+       android:layout_height="170dp"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp">"
+        
+    <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="15dp">
+            
+        <ImageView 
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/yuandian"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【我们一起去看琶洲的花展吧】"
+            android:textColor="#505050"
+            android:textSize="18dp"/>"
+     </LinearLayout>
+     
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="2015.3.15"
+         android:textColor="#505050"
+         android:textSize="15dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginTop="3dp"/>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">"
+            
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/zan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30人"
+            android:layout_marginLeft="5dp"
+            android:textColor="#505050"
+            android:textSize="17dp"/>
+     </LinearLayout>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/xin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应约人（5人）"
+            android:layout_marginLeft="5dp"
+            android:textColor="#505050"
+            android:textSize="17dp"/>
+     </LinearLayout>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/lin2"
+        android:layout_below="@+id/lin1"
+       android:background="@drawable/whitebgbig"
+       android:layout_width="fill_parent"
+       android:layout_height="170dp"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+        android:layout_marginTop="-5dp"
+       android:layout_marginRight="5dp">
+        
+    <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="15dp">
+            
+        <ImageView 
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/yuandian"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【我们一起去看琶洲的花展吧】"
+            android:textColor="#505050"
+            android:textSize="18dp"/>
+     </LinearLayout>
+     
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="2015.3.15"
+         android:textColor="#505050"
+         android:textSize="15dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginTop="3dp"/>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/zan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30人"
+            android:layout_marginLeft="5dp"
+            android:textColor="#505050"
+            android:textSize="17dp"/>
+     </LinearLayout>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/xin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应约人（5人）"
+            android:layout_marginLeft="5dp"
+            android:textColor="#505050"
+            android:textSize="17dp"/>
+     </LinearLayout>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+       
+        android:layout_below="@+id/lin2"
+       android:background="@drawable/whitebgbig"
+       android:layout_width="fill_parent"
+       android:layout_height="170dp"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp">
+        
+    <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="15dp">
+            
+        <ImageView 
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/yuandian"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【我们一起去看琶洲的花展吧】"
+            android:textColor="#505050"
+            android:textSize="18dp"/>
+     </LinearLayout>
+     
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="2015.3.15"
+         android:textColor="#505050"
+         android:textSize="15dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginTop="3dp"/>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/zan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30人"
+            android:layout_marginLeft="5dp"
+            android:textColor="#505050"
+            android:textSize="17dp"/>
+     </LinearLayout>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/xin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应约人（5人）"
+            android:layout_marginLeft="5dp"
+            android:textColor="#505050"
+            android:textSize="17dp"/>
+     </LinearLayout>
+     
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="3dp"
+       android:gravity="center_vertical">
+            
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat"
+            android:layout_marginLeft="5dp"/>
+        
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+   
+    <RelativeLayout
+         android:id="@+id/relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">"
+
+        <ImageButton
+            android:id="@+id/wait_jude"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/daipingjia"
+            android:onClick="onClick" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">"
+          
+          <ImageButton 
+            android:onClick="onClick"
+            android:id="@+id/answer"
+           android:layout_toRightOf="@+id/wait_jude"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/yiyingyue" />
+
+
+        <ImageButton
+            android:onClick="onClick"
+            android:layout_toRightOf="@+id/answer"
+             android:layout_marginLeft="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/yifabu" />  
+        </LinearLayout>
+
+        
+        
+        <ImageButton
+            android:onClick="onClick"
+            android:layout_marginRight="20dp"
+             android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/yipingjia" />
+    </RelativeLayout>
+    </RelativeLayout>
+    

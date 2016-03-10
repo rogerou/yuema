@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebeced" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00c8c7" >
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/findselector" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/myselector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="我的昵称"
+        android:textColor="#505050"
+        android:textSize="20dp" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tw1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:gravity="center" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:height="40dp"
+                android:text="约会信息"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="时间"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="状态"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:height="30dp"
+                android:text="[我们一起去琶洲看画展吧]"
+                android:textColor="#38a9a8" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="2015.3.5"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="待处理"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:height="30dp"
+                android:text="[想去看“少年派”]"
+                android:textColor="#38a9a8" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="2015.5.3"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="已勾搭"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:height="30dp"
+                android:text="[想去看“少年派”]"
+                android:textColor="#38a9a8" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="2015.5.3"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="待回应"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:height="30dp"
+                android:text="[想去看“少年派”]"
+                android:textColor="#38a9a8" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="2015.5.3"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="被拒绝"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:height="30dp"
+                android:text="[想去看“少年派”]"
+                android:textColor="#38a9a8" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="2015.5.3"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="已勾搭"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:height="30dp"
+                android:text="[想去看“少年派”]"
+                android:textColor="#38a9a8" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="2015.5.3"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="待回应"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:height="30dp"
+                android:text="[想去看“少年派”]"
+                android:textColor="#38a9a8" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="2015.5.3"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="被拒绝"
+                android:textColor="#505050" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/li1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/wait_jude"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/yigouda"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/answer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/yiyingyueed"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/yifabu"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ebeced"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00c8c7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+        
+        <TextView
+            android:id="@+id/bt1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人资料"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:textSize="25dp"/>
+    
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+      
+      <ImageView 
+          android:id="@+id/iv_touxiang"
+          android:background="@drawable/cat"
+          android:layout_marginLeft="15dp"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_gravity="center_vertical"/>"
+      
+      <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp">
+
+      <TextView
+          android:id="@+id/tv_username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="昵称"
+          android:textColor="#505050"
+          android:textSize="20dp" />
+      
+       <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+        
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="约值"
+          android:textColor="#505050"
+          android:textSize="15dp" />   
+          
+        <ImageView 
+            android:id="@+id/iv_score1"
+            android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:background="@drawable/xin"
+           android:layout_marginLeft="5dp"/>
+        
+        <ImageView 
+          android:id="@+id/iv_score2"
+            android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:background="@drawable/xin"
+           android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff" 
+        android:layout_marginTop="5dp">
+    
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">"
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="性别："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_sex"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="女"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" />
+        
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+        
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="年龄："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_age"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="22"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" /> 
+        
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="爱好："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_hobby"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="交游、游泳"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" />
+        
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="简介："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_sum"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="Today is your lacky day"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" /> 
+        
+        </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff">
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="联系信息"
+            android:textSize="18dp"
+            android:gravity="center"/>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="2dp"
+           android:background="#d9d9d9" /> 
+           
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="手机："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_phone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="13600136001"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" />  
+        "
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="学校："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_school"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="广州中医药大学"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" /> 
+           
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="学院："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_college"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="医学信息工程学院"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" /> 
+           
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="专业："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_marjor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="计算机科学与技术"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#d9d9d9" /> 
+           
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+       
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="年级："
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_grade"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="2012级"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+
+        </LinearLayout>
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp" 
+        android:layout_marginTop="20dp">
+    </RelativeLayout>
+    
+    </LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="datetype">
+        <item>跑步</item>
+        <item>读书馆</item>
+        <item>看电影</item>
+        <item>吃饭</item>
+        <item>唱k</item>
+        <item>旅游</item>
+        
+    </string-array>
+</resources>
